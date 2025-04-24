@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>カウントアプリ</title>
+</head>
+<body>
+  <h1>カウント: <span id="count">0</span></h1>
+  <button id="countButton">カウントアップ！</button>
+
+  <script>
+let count = 0; // 初期値0
+
+const countButton = document.getElementById('countButton'); // ボタンを取得
+const countDisplay = document.getElementById('count'); // 数字を表示する場所を取得
+
+countButton.addEventListener('click', () => {
+  count += 1; // 1ずつ増やす
+  countDisplay.textContent = count; // 表示を更新
+});
+
+  </script>
+</body>
+</html>
